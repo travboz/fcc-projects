@@ -9,7 +9,7 @@ This repository holds all of my completed freeCodeCamp projects.
 
 | Course | Project Name | Link |
 | ------ | ------------ | ---- |
-| Responsive Web Design | Survey Form | [📑](https://github.com/travboz/fcc-projects/fcc_suvery_form_rwd_p1/)
+| Responsive Web Design | Survey Form | [📑](https://travboz.github.io/fcc-projects/fcc_suvery_form_rwd_p1/)
 
 
 ***
