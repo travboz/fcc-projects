@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>User Experience Feedback Form</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div id="container">
+            <div id="heading">
+                <header>
+                        <div class="title-card">
+                            <img src="img/logo.png" />
+                            <h1 id="title">USER EXPERIENCE FEEDBACK</h1>
+                        </div>
+                        <p id="description">Thank you for taking the time to help us improve the experience</p>
+                </header>
+            </div>
+            <div id="form">
+                <form id="survey-form">
+                    <fieldset class="contact-info">
+                        <label class="direction-text" for="name" id="name-label">Name <input id="name" type="text" required placeholder="Enter your name"/></label>
+                        <label class="direction-text" for="email" id="email-label">Email <input id="email" type="email" required placeholder="Enter your email address"/></label>
+                        <label class="direction-text" for="number" id="number-label">Age <input id="number" type="number" min="16" max="120" required placeholder="Age"/></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="direction-text">Would you recommend our product to a friend?</legend>
+                        <label for="definitely-recommend"><input id="definitely-recommend" type="radio" value="definitely" name="recommend" checked /> Definitely!</label>
+                        <label for="maybe-recommend"><input id="maybe-recommend" type="radio" value="maybe" name="recommend" /> Maybe...</label>
+                        <label for="unsure-recommend"><input id="unsure-recommend" type="radio" value="unsure" name="recommend" /> Unsure.</label>
+                    </fieldset>
+                    <fieldset>
+                        <label class="direction-text">Would you recommend our product to a friend?
+                        <select id="dropdown" name="ease-of-navigation" for="ease-of-navigation">
+                            <option value="1">Very Easy</option>
+                            <option value="2">Somewhat Easy</option>
+                            <option value="3">Neutral</option>
+                            <option value="4">Somewhat Difficult</option>
+                            <option value="5">Very Difficult</option>
+                        </select>
+                        </label>
+                    </fieldset>
+                    <fieldset class="features">
+                        <legend class="direction-text">Features Used <span id="check-all">(check all the apply):</span></legend>
+                        <label for="search-functionality"><input id="search-functionality" type="checkbox" name="features-used" value="search-functionality" />Search Functionality</label>
+                        <label for="navigation-menu"><input id="navigation-menu" type="checkbox" name="features-used" value="navigation-menu" />Navigation Menu</label>
+                        <label for="contact-form"><input id="contact-form" type="checkbox" name="features-used" value="contact-form" />Contact Form</label>
+                        <label for="blog-news"><input id="blog-news" type="checkbox" name="features-used" value="blog-news" />Blog/News Section</label>
+                        <label for="shopping-cart"><input id="shopping-cart" type="checkbox" name="features-used" value="shopping-cart" />E-commerce/Shopping Cart</label>
+                        <label for="user-profile"><input id="user-profile" type="checkbox" name="features-used" value="user-profile" />User Account/Profile</label>
+                        <label for="social-media-links"><input id="social-media-links" type="checkbox" name="features-used" value="social-media-links" />Social Media Links</label>
+                        <label for="live-chat"><input id="live-chat" type="checkbox" name="features-used" value="live-chat" />Live Chat Support</label>
+                    </fieldset>
+                    <fieldset>
+                        <label class="direction-text" for="suggestions">Any comments or suggestions?
+                            <textarea id="suggestions" name="suggestions" rows="3" cols="30" ></textarea>
+                        </label>
+                    </fieldset>
+                    <input id="submit" type="submit" value="Submit" />
+                </form>
+
+                <!-- <div class="color" id="a" style="background-color:#ffcba4"></div>
+                <div class="color" id="b" style="background-color:#a3c1ad"></div>
+                <div class="color" id="c" style="background-color:#87ceeb"></div>
+                <div class="color" id="d" style="background-color:#eaeaea"></div>
+                <div class="color" id="e" style="background-color:#fff8e7"></div> -->
+            </div>
+
+        </div>
+    </body>
+</html>
