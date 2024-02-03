@@ -9,7 +9,7 @@ This repository holds all of my completed freeCodeCamp projects.
 
 | Course | Project Name | Link |
 | ------ | ------------ | ---- |
-| Responsive Web Design | Survey Form | [📑]([https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/odin-recipes/](https://github.com/travboz/fcc-projects/tree/main/fcc_suvery_form_rwd_p1)https://github.com/travboz/fcc-projects/tree/main/fcc_suvery_form_rwd_p1)
+| Responsive Web Design | Survey Form | [📑][https://github.com/travboz/fcc-projects/tree/main/fcc_suvery_form_rwd_p1]
 
 
 ***
