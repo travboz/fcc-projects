@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Technical Documentation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css">
+      </head>
+      <body>
+        <nav id="navbar">
+            <header>Rust Documentation</header>
+            <a class="nav-link" href="#Introduction">Introduction</a>
+            <a class="nav-link" href="#What_you_should_already_know">What you should already know</a>
+            <a class="nav-link" href="#Rust_and_Other_Languages">Rust and Other Languages</a>
+            <a class="nav-link" href="#Getting_Started">Getting Started</a>
+            <a class="nav-link" href="#Variables_and_Mutability">Variables and Mutability</a>
+            <a class="nav-link" href="#Data_Types">Data Types</a>
+            <a class="nav-link" href="#Control_Flow">Control Flow</a>
+            <a class="nav-link" href="#Ownership_and_Borrowing">Ownership and Borrowing</a>
+            <a class="nav-link" href="#Match_and_Error_Handling">Match and Error Handling</a>
+            <a class="nav-link" href="#Concurrency">Concurrency</a>
+            <a class="nav-link" href="#References">References</a>
+
+        </nav>
+        <main id="main-doc">
+            <section id="Introduction" class="main-section">
+                <header class="section-header">Introduction</header>
+                <p>
+                    Rust is a systems programming language focused on speed, memory safety, and parallelism.
+                    It achieves these goals without needing a garbage collector, making it useful for
+                    performance-critical services, embedded systems, and anywhere else fine-grained control
+                    over memory is needed. Rust offers powerful features to manage memory and concurrency safely
+                    and efficiently, significantly reducing the risk of bugs and crashes.
+                </p>
+                <p>
+                    Rust includes a rich standard library that provides a wide range of functionalities, from basic
+                    data structures to networking and concurrency. Rust's ecosystem is further enriched by Cargo,
+                    its package manager, and build system, which makes it easy to share and reuse libraries.
+                </p>
+                <p>Rust can be used for developing a variety of applications, such as:</p>
+                <ul>
+                    <li>Command-line applications</li>
+                    <li>WebAssembly programs</li>
+                    <li>Network services</li>
+                    <li>Embedded devices</li>
+                </ul>
+            </section>
+            <section id="What_you_should_already_know" class="main-section">
+                <header class="section-header">What you should already know</header>
+                <p>Before diving into Rust, you should be familiar with:</p>
+                <ul>
+                    <li>Basic concepts of programming and systems design.</li>
+                    <li>Some familiarity with systems programming concepts can be helpful, though not strictly necessary.</li>
+                    <li>
+                        Understanding of compiled languages, though Rust can also be a first compiled language for
+                        learners due to its emphasis on safety and detailed error messages.
+                    </li>
+                </ul>
+            </section>
+            <section id="Rust_and_Other_Languages" class="main-section">
+                <header class="section-header">Rust and Other Languages</header>
+                <p>
+                    Rust is often compared to C and C++ due to its focus on low-level systems
+                    programming, but it introduces novel concepts such as ownership, borrowing, and
+                    lifetimes to manage memory and concurrency safely. Unlike dynamically typed languages,
+                    Rust is statically typed and enforces a strict type system at compile time, leading to fewer runtime errors.
+                </p>
+                <p>
+                    Rust's ownership model is a unique feature that manages memory without a garbage collector,
+                    enabling efficient memory usage and increasing performance. The borrow checker ensures
+                    that references do not outlive their data, preventing common errors such as dangling pointers.
+                </p>
+                <p>
+                    Rust also offers pattern matching, functional programming features, and an algebraic
+                    type system, distinguishing it from more traditional systems programming languages.
+                </p>
+            </section>
+            <section id="Getting_Started" class="main-section">
+                <header class="section-header">Getting Started</header>
+                <p>
+                    To start with Rust, install the Rust toolchain, which includes Rustc (the compiler),
+                    Cargo (the package manager), and Rustup (the toolchain installer). A simple "Hello, world!"
+                    program in Rust looks like this:
+                </p>
+                <code id="hello_world_code">
+                    fn main() {
+                        println!("Hello, world!");
+                    }
+                </code>
+                <p>
+                    To run this program, save it in a file with the <code>.rs</code> extension, then use Cargo to compile and run your program.
+                </p>
+            </section>
+            <section id="Variables_and_Mutability" class="main-section">
+                <header class="section-header">Variables and Mutability</header>
+                <p>
+                    In Rust, variables are immutable by default. This means once a value is bound to a name, it cannot be changed. If you need to change a value, you can use the <code>mut</code> keyword.
+                </p>
+                <code>
+                    let x = 5;
+                    let mut y = 5;
+                    y = 10; // This is allowed because y is mutable
+                </code>
+                <p>Rust's approach to immutability by default encourages writing code that is safe and concurrent by design.</p>
+            </section>
+            <section id="Data_Types" class="main-section">
+                <header class="section-header">Data Types</header>
+                <p>
+                    Rust has four primary scalar types: integers, floating-point numbers, Booleans, and characters. It also has
+                    compound types, like tuples and arrays, to group multiple values. Rust’s type system is strict, aiding
+                    in compile-time error checking.
+                </p>
+            </section>
+            <section id="Control_Flow" class="main-section">
+                <header class="section-header">Control Flow</header>
+                <p>Rust provides several control flow constructs such as <code>if</code>, <code>loop</code>, <code>while</code>,
+                    and <code>for</code> for executing code based on conditions or for repeating code.</p>
+            </section>
+            <section id="Ownership_and_Borrowing" class="main-section">
+                <header class="section-header">Ownership and Borrowing</header>
+                <p>
+                    One of Rust's distinguishing features is its ownership system, designed to manage memory safely and
+                    efficiently. It eliminates common errors such as dangling pointers, double frees, and memory leaks
+                    without the overhead of a garbage collector.
+                </p>
+            </section>
+            <section id="Match_and_Error_Handling" class="main-section">
+                <header class="section-header">Match and Error Handling</header>
+                <p>
+                    Rust uses pattern matching extensively, particularly in error handling. The Result
+                    and Option enums are used to handle situations that could result in errors or
+                    absence of values, making Rust programs more robust and error-resistant.
+                </p>
+            </section>
+            <section id="Concurrency" class="main-section">
+                <header class="section-header">Concurrency</header>
+                <p>
+                    Rust's ownership and type system characteristics enable safe and efficient concurrency,
+                    allowing you to write programs that perform multiple tasks at the same time without data
+                    races or other common concurrency problems.
+                </p>
+            </section>
+            <section id="References" class="main-section">
+                <header class="section-header">References</header>
+                <p>
+                    All the information in this overview is based on the official Rust documentation and other
+                    resources available at <a href="https://doc.rust-lang.org/book/" action="_blank">The Rust Programming Language</a> website.
+                </p>
+            </section>
+
+        </main>
+      </body>
+</html>
