@@ -12,6 +12,7 @@ This repository holds all of my completed freeCodeCamp projects.
 | Responsive Web Design | Survey Form | [📑](https://travboz.github.io/fcc-projects/fcc_suvery_form_rwd_p1/)
 | Responsive Web Design | Tribute Page | [🏍](https://travboz.github.io/fcc-projects/tribute_page/)
 | Responsive Web Design | Technical Documentation | [🛠](https://travboz.github.io/fcc-projects/technical_documentation/)
+| Responsive Web Design | Product Landing Page | [🛵](https://travboz.github.io/fcc-projects/product_landing_page/)
 
 
 ***
