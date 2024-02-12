@@ -70,6 +70,12 @@ li a:hover {
     font-size: 1.3rem;
 }
 
+.about-me {
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.02rem;
+}
+
 .welcome p {
     text-align: left;
     font-size: 0.85rem;
