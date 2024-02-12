@@ -1,0 +1,185 @@
+/* Basic reset */
+
+*, *:before, *:after {
+    box-sizing: border-box; /* Ensures padding and border are included within the element's dimensions */
+}
+
+/* To reset the random margins and padding on elements like the h1 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body * {
+    font-family: 'Rubik', sans-serif;
+    /* background-color: #fff; */
+    font-weight: 100;
+}
+
+header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul > li {
+    padding: 20px 20px;
+    font-size: 0.9rem;
+}
+
+li a:hover {
+    color: rgb(80, 121, 168);
+}
+
+.welcome {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 0.15em;
+}
+
+.welcome h1 {
+    text-align: left;
+    font-weight: 200;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.welcome p {
+    text-align: left;
+    font-size: 0.85rem;
+}
+
+.welcome * {
+    max-width: 720px;
+    margin: 10px auto;
+}
+
+@media (max-width: 780px) {
+    .welcome * {
+        max-width: 360px;
+        margin: 10px auto;
+    }
+}
+
+#projects {
+    padding: 3rem 2rem;
+}
+
+.projects-title {
+    margin-bottom: 2rem;
+}
+
+
+/* Style for the projects grid */
+#projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    max-width: 600px;
+    margin: auto;
+}
+
+@media (max-width: 780px) {
+    #projects-grid {
+        gap: 25px;
+        max-width: 360px;
+    }
+}
+
+#projects-grid a {
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid transparent;
+}
+
+#projects > h2 {
+    font-size: 1.1rem;
+}
+
+#projects-grid img {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    clip-path: inset(0 5px 0 0);
+}
+
+.project-tile {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.border-animate {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.border-animate::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: rgb(80, 121, 168);
+    transition: width 0.3s ease-in-out;
+}
+
+.border-animate:hover::before {
+    width: 100%;
+}
+
+
+.footer-container {
+    width: 100%;
+    background-color:  hsl(64,100%,50%);
+    padding: 6rem 15%;
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container > h3:first-of-type {
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+}
+
+.contacts {
+    padding-top: 2rem;
+}
+
+.travis-email {
+    text-decoration: underline;
+}
+
+
+

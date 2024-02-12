@@ -1,40 +1,76 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Travis | Portfolio</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./styles.css">
-    </head>
 
-    <body>
-        <header id="header">
-            <nav id="navbar">
-                <ul class="nav-links-list">
-                    <li><a class="nav-link" href="#welcome-section">About</a></li>
-                    <li><a class="nav-link" href="#work">Work</a></li>
-                    <li><a class="nav-link" href="#contact">Contact</a></li>
-                    <li><a id="profile-link" href="https://github.com/travboz" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a></li>
-                </ul>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8" />
+    <title>Travis | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
 
-        <section id="welcome-section">
+<body>
+    <header id="header">
+        <nav id="navbar">
+            <ul class="nav-links-list">
+                <li><a class="nav-link" href="#welcome-section">About</a></li>
+                <li><a class="nav-link" href="#projects">Work</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+                <li><a id="profile-link" href="https://github.com/travboz" target="_blank"
+                        class="btn contact-details"><i class="fab fa-github"></i> GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section id="welcome-section" class="welcome">
+        <div class="welcome-container">
             <h1 class="hero">Welcome</h1>
-            <p class="blurb">My name is Travis and I'm a Software Engineer that has recently graduated from UNSW.</p>
-            <p class="projects-rationale">The projects you see on this portfolio are beginning projects to expand my skillset into front-end web development; a skill that I feel is valuable to have.
-                Amongst these, my greater interests are Rust programming and creating memory safe and secure tools, exploring object oriented paradigms with Java, and machine learning with Python.
+            <p class="blurb">My name is Travis and I'm a Graduate Software Engineer that has recently graduated from
+                UNSW.</p>
+            <p class="projects-rationale">The projects you see on this portfolio are beginning projects to expand my
+                skillset into front-end web development; a skill that I feel is valuable to have.
+                Amongst these, my greater interests are Rust programming and creating memory safe and secure tools,
+                exploring object oriented paradigms with Java, and machine learning with Python.
             </p>
-        </section>
+        </div>
+    </section>
+    <section id="projects">
+        <h2 class="projects-title">Some initial front end projects</h2>
         <div id="projects-grid">
-            <h2 class="projects-title"></h2>
-            <section id="projects">
-                <div class="project-tile"><a href="#" target="_blank"></a></div>
-                <div class="project-tile"><a href="#" target="_blank"></a></div>
-                <div class="project-tile"><a href="#" target="_blank"></a></div>
-                <div class="project-tile"><a href="#" target="_blank"></a></div>
-            </section>
-        </section>
-    </body>
+            <a href="https://travboz.github.io/fcc-projects/fcc_suvery_form_rwd_p1/" target="_blank" class="border-animate">
+                <img src="./img/user_exp_form.png" alt="user experience form thumbnail" />
+                <p class="project-tile">Survey Form</p>
+            </a>
+            <a href="https://travboz.github.io/fcc-projects/tribute_page/" target="_blank" class="border-animate">
+                <img src="./img/honda_tribute_page.png" alt="honda motorcycles tribute page thumbnail" />
+                <p class="project-tile">Tribute Page</p>
+            </a>
+            <a href="https://travboz.github.io/fcc-projects/technical_documentation/" target="_blank" class="border-animate">
+                <img src="./img/rust_tech_docs.png" alt="rust technical documentation page thumbnail" />
+                <p class="project-tile">Technical Documentation</p>
+            </a>
+            <a href="https://travboz.github.io/fcc-projects/product_landing_page/" target="_blank" class="border-animate">
+                <img src="./img/aprilia_product_page.png" alt="aprilia product page thumbnail" />
+                <p class="project-tile">Product Landing Page</p>
+            </a>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <div class="footer-container" id="contact">
+            <h3 class="proposal">I am currently looking to gain experience in industry
+                <br> by finding an entry level role or an intership opportunity.
+            </h3>
+            <h3 class="contacts">Email: <a href="mailto:travis.bozic@hotmail.com" class="travis-email">travis.bozic@hotmail.com</a></h3>
+        </div>
+
+    </footer>
+</body>
+
 </html>
